@@ -24,6 +24,7 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
   - A 5th link (1×/month, $100/mo) exists in the Stripe dashboard but is **deactivated** — not linked anywhere on the site.
 - Booking is online-only: all sessions are paid online in advance through one of the plans above — there's no deposit option and no paying on the day.
 - All prices on `services.html` match the live Stripe prices above (kept in sync manually — if a Stripe price changes, update both places).
+- Real photos of May (from her own gallery) are now in place on the home hero (`images/hero-home.jpg`), the About page hero (`images/hero-about.jpg`) and the services panel (`images/service-massage.jpg`) — see "Photos" below.
 
 **Placeholder — search for `⚠` in the rendered pages, or `PLACEHOLDER` in the HTML, to find every spot to update:**
 - May's bio text and certifications (about.html)
@@ -31,7 +32,15 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 - The Facebook page URL (currently `#` everywhere it appears)
 - Client testimonial quotes (index.html, about.html)
 - The footer credit line ("Site by Totality Digital") — remove or change freely
-- Photos — no photos are included; the design uses flat color panels instead so it never looks like a mockup with missing images. Swap the `.hero-visual` and `.service-panel` blocks for real photos whenever you have licensed/approved ones.
+
+## Photos
+
+Three real photos of May are in `images/`, sized and compressed for web (~120–330 KB each):
+- `hero-home.jpg` — Home page hero (`.hero-visual--home` in `css/style.css`)
+- `hero-about.jpg` — About page hero, headshot (`.hero-visual--about`)
+- `service-massage.jpg` — Services page panel background (`.service-panel--photo`)
+
+To swap any of them for a different shot later, drop the new file into `images/` under the same filename (or update the `url(...)` path in `css/style.css`) — no HTML changes needed.
 
 ## Stripe payments
 
