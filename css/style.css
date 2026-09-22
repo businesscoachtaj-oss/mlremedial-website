@@ -180,6 +180,17 @@ p{ margin: 0 0 1em; }
 .card h3{ font-size: 21px; }
 .card p{ color: var(--charcoal-2); font-size: 15px; margin-bottom: 0; }
 
+/* Certifications & memberships */
+.certs-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.cert-item{
+  background: var(--cream-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 26px;
+}
+.cert-item h4{ font-size: 16px; margin: 0 0 8px; font-family:'Fraunces',serif; font-weight:600; }
+.cert-item p{ font-size: 13.5px; color: var(--charcoal-2); margin: 0; line-height:1.55; }
+
 .section-head{ max-width: 640px; margin: 0 0 48px; }
 .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
 .section-head h2{ font-size: 38px; }
@@ -314,6 +325,7 @@ p{ margin: 0 0 1em; }
   .hero-visual{ aspect-ratio: 3/4; }
   .grid-3{ grid-template-columns: 1fr; }
   .grid-2{ grid-template-columns: 1fr; }
+  .certs-grid{ grid-template-columns: 1fr; }
   .service-row{ grid-template-columns: 1fr; padding: 40px 0; }
   .service-row.reverse .service-copy{ order:1; }
   .service-row.reverse .service-panel{ order:2; }
