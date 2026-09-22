@@ -136,6 +136,8 @@ p{ margin: 0 0 1em; }
   aspect-ratio: 4/5;
   border-radius: 28px;
   background: linear-gradient(155deg, var(--terracotta) 0%, #C9835F 45%, var(--sage) 130%);
+  background-size: cover;
+  background-position: center;
   display:flex; align-items:flex-end;
   padding: 28px;
   overflow:hidden;
@@ -143,9 +145,11 @@ p{ margin: 0 0 1em; }
 .hero-visual::before{
   content:""; position:absolute; inset:0;
   background:
-    radial-gradient(circle at 25% 20%, rgba(255,255,255,0.30), transparent 45%),
-    radial-gradient(circle at 80% 85%, rgba(32,28,24,0.28), transparent 55%);
+    linear-gradient(180deg, rgba(20,17,14,0) 45%, rgba(20,17,14,0.62) 100%),
+    radial-gradient(circle at 25% 12%, rgba(255,255,255,0.16), transparent 45%);
 }
+.hero-visual--home{ background-image: url('../images/hero-home.jpg'); background-position: 30% center; }
+.hero-visual--about{ background-image: url('../images/hero-about.jpg'); background-position: center 15%; }
 .hero-visual .visual-card{
   position:relative; z-index:2;
   background: rgba(245,240,230,0.94);
@@ -212,6 +216,16 @@ p{ margin: 0 0 1em; }
 .service-panel .sp-quote{ font-family:'Fraunces',serif; font-size:24px; line-height:1.35; }
 .service-panel .sp-attr{ margin-top: 18px; font-size: 13px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color: var(--terracotta-dark); }
 .service-panel.dark .sp-attr{ color: #E6B79B; }
+.service-panel--photo{
+  position:relative;
+  background:
+    linear-gradient(200deg, rgba(20,17,14,0.18) 20%, rgba(20,17,14,0.82) 100%),
+    url('../images/service-massage.jpg');
+  background-size: cover;
+  background-position: 62% center;
+  color: var(--cream);
+}
+.service-panel--photo .sp-attr{ color: #E6B79B; }
 
 /* Placeholder note */
 .placeholder-note{
