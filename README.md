@@ -25,8 +25,13 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 - Booking is online-only: all sessions are paid online in advance through one of the plans above — there's no deposit option and no paying on the day.
 - All prices on `services.html` match the live Stripe prices above (kept in sync manually — if a Stripe price changes, update both places).
 - Real photos of May (from her own gallery) are now in place on the home hero (`images/hero-home.jpg`), the About page hero (`images/hero-about.jpg`) and the services panel (`images/service-massage.jpg`) — see "Photos" below.
-- May's real bio on `about.html` — her own words (from her Instagram bio posts) on how she got into training and remedial work, her qualifications (Bachelor's Degree in Physical Education, Diploma in Fitness, qualified Fascia Stretch Therapist), and her mission statement. Note: FST is a real qualification of May's, but it is **not** a separate bookable service on this site — the only paid, bookable service is still Remedial Massage (see above).
+- May's real bio on `about.html` — her own words (from her Instagram bio posts) on how she got into training and remedial work, and her mission statement. Note: FST is a real qualification of May's, but it is **not** a separate bookable service on this site — the only paid, bookable service is still Remedial Massage (see above).
 - Real contact details on `contact.html`: email `bodybymay@gmail.com`, phone `0439 320 399`, and studio location `14/174 Gibbs St, Roseville NSW (Lower Level)`.
+- Real certifications & memberships on `about.html` (Qualifications card + a dedicated "Certifications & Memberships" section), sourced directly from May's certificates — not paraphrased or approximated:
+  - **HLT52021 Diploma of Remedial Massage** — Australian Institute of Fitness, nationally recognised (AQF), awarded 2026
+  - **Registered Member, Association of Massage Therapists (AMT)**, Senior Level One, Member #19046, financial to Sep 2027 — this is what lets many of her clients claim remedial massage rebates through private health insurance
+  - **Certified Fascial Stretch Practitioner — Level 1**, Stretch to Win Institute (FST), certified 2021
+  - **Trigger Point Myofascial Compression Techniques**, Personal Training Academy, certified 2014
 
 **Placeholder — search for `⚠` in the rendered pages, or `PLACEHOLDER` in the HTML, to find every spot to update:**
 - Business hours (contact.html) — not yet provided
