@@ -25,12 +25,14 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 - Booking is online-only: all sessions are paid online in advance through one of the plans above — there's no deposit option and no paying on the day.
 - All prices on `services.html` match the live Stripe prices above (kept in sync manually — if a Stripe price changes, update both places).
 - Real photos of May (from her own gallery) are now in place on the home hero (`images/hero-home.jpg`), the About page hero (`images/hero-about.jpg`) and the services panel (`images/service-massage.jpg`) — see "Photos" below.
+- May's real bio on `about.html` — her own words (from her Instagram bio posts) on how she got into training and remedial work, her qualifications (Bachelor's Degree in Physical Education, Diploma in Fitness, qualified Fascia Stretch Therapist), and her mission statement. Note: FST is a real qualification of May's, but it is **not** a separate bookable service on this site — the only paid, bookable service is still Remedial Massage (see above).
+- Real contact details on `contact.html`: email `bodybymay@gmail.com`, phone `0439 320 399`, and studio location `14/174 Gibbs St, Roseville NSW (Lower Level)`.
 
 **Placeholder — search for `⚠` in the rendered pages, or `PLACEHOLDER` in the HTML, to find every spot to update:**
-- May's bio text and certifications (about.html)
-- Email, phone, address, business hours (contact.html)
-- The Facebook page URL (currently `#` everywhere it appears)
+- Business hours (contact.html) — not yet provided
+- The Facebook page URL (currently `#` everywhere it appears) — not yet provided
 - Client testimonial quotes (index.html, about.html)
+- The map/studio-photo block on `contact.html` — swap for an embedded Google Map or studio photo
 - The footer credit line ("Site by Totality Digital") — remove or change freely
 
 ## Photos
