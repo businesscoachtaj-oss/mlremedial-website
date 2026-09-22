@@ -311,7 +311,7 @@ p{ margin: 0 0 1em; }
 @media (max-width: 900px){
   .hero .container{ grid-template-columns: 1fr; }
   .hero h1{ font-size: 40px; }
-  .hero-visual{ aspect-ratio: 16/10; }
+  .hero-visual{ aspect-ratio: 3/4; }
   .grid-3{ grid-template-columns: 1fr; }
   .grid-2{ grid-template-columns: 1fr; }
   .service-row{ grid-template-columns: 1fr; padding: 40px 0; }
@@ -334,4 +334,8 @@ p{ margin: 0 0 1em; }
   .section{ padding: 60px 0; }
   .section-head h2{ font-size: 30px; }
   .steps{ grid-template-columns: 1fr; }
+  .hero-visual{ aspect-ratio: 4/5; padding: 18px; }
+  .hero-visual .visual-card{ padding: 14px 16px; }
+  .hero-visual .visual-card .vc-title{ font-size: 19px; margin: 4px 0 3px; }
+  .hero-visual .visual-card .vc-sub{ font-size: 12px; }
 }
