@@ -4,23 +4,28 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 
 ## Pages
 - `index.html` — Home
-- `services.html` — Services & pricing (Remedial Massage, Movement + Performance Therapy, FST)
+- `services.html` — Services & pricing (Remedial Massage only, four recurring plans)
 - `about.html` — About May
-- `book.html` — Booking (Calendly link + 3 live Stripe payment links, one per service)
+- `book.html` — Booking (Calendly link + 4 live Stripe payment links, one per plan)
 - `contact.html` — Contact info & socials
 
 ## What's real vs. placeholder
 
-**Real, pulled from the @ml.remedial Instagram:**
+**Real:**
 - Business name (M.L Remedial), practitioner name (May Lareza)
-- Service names: Remedial Massage, Movement + Performance Therapy, Fascia Stretch Therapy (FST)
-- The FST description ("pain-free method... decompresses joint capsules...")
+- The only real service is **Remedial Massage**, offered as four recurring Stripe subscriptions — there is no Movement + Performance Therapy or Fascia Stretch Therapy (FST); an earlier draft of this site invented those and it's been corrected.
 - The Calendly booking link: `bit.ly/Calendly-MLRemedial`
 - Instagram handle: `@ml.remedial`
-- The 3 Stripe Payment Links on `book.html` — live, provided directly, mapped in this order: Remedial Massage → `buy.stripe.com/cNi7sEgoe9UUaisbdz8Zq01`, Movement + Performance Therapy → `buy.stripe.com/eVq5kw6NEffe62cgxT8Zq02`, Fascia Stretch Therapy (FST) → `buy.stripe.com/7sYdR2fka6IIcqA3L78Zq03`. **Double-check each button opens the correct product/price in Stripe before the site goes live** — the order was assumed to match how services are listed everywhere else on the site; if it's wrong, swap the `href`s in `book.html`.
+- The 4 Stripe Payment Links on `book.html` — each one opened directly and verified against its actual checkout page (product name + price), not assumed:
+  - 2×/week, $180/wk → `buy.stripe.com/9B6dR23Bs1oo3U4chD8Zq04`
+  - 1×/week, $100/wk → `buy.stripe.com/cNi7sEgoe9UUaisbdz8Zq01`
+  - 1×/fortnight, $110/2wks → `buy.stripe.com/eVq5kw6NEffe62cgxT8Zq02`
+  - 1×/month, $120/mo → `buy.stripe.com/7sYdR2fka6IIcqA3L78Zq03`
+  - A 5th link (1×/month, $100/mo) exists in the Stripe dashboard but is **deactivated** — not linked anywhere on the site.
+- Booking is online-only: all sessions are paid online in advance through one of the plans above — there's no deposit option and no paying on the day.
+- All prices on `services.html` match the live Stripe prices above (kept in sync manually — if a Stripe price changes, update both places).
 
 **Placeholder — search for `⚠` in the rendered pages, or `PLACEHOLDER` in the HTML, to find every spot to update:**
-- All prices and session durations (services.html) — note these are separate from the Stripe links' own prices; keep them in sync manually
 - May's bio text and certifications (about.html)
 - Email, phone, address, business hours (contact.html)
 - The Facebook page URL (currently `#` everywhere it appears)
@@ -30,7 +35,7 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 
 ## Stripe payments
 
-The Payment Link route was used (not embedded Checkout) since it needs no backend — the links above are hosted, secure Stripe checkout pages. To add more (e.g. package deals), create additional links at https://dashboard.stripe.com under **Payment links → + Create payment link**, then add another button in `book.html` following the same pattern as the three already there.
+The Payment Link route was used (not embedded Checkout) since it needs no backend — the links above are hosted, secure Stripe checkout pages. To add more (e.g. a package deal), create additional links at https://dashboard.stripe.com under **Payment links → + Create payment link**, then add another button in `book.html` following the same pattern as the four already there — open the new link yourself first and confirm its product/price before publishing.
 
 ## Deploying
 
