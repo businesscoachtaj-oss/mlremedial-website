@@ -14,7 +14,7 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
 **Real:**
 - Business name (M.L Remedial), practitioner name (May Lareza)
 - The only real service is **Remedial Massage**, offered as four recurring Stripe subscriptions — there is no Movement + Performance Therapy or Fascia Stretch Therapy (FST); an earlier draft of this site invented those and it's been corrected.
-- The Calendly booking link: `bit.ly/Calendly-MLRemedial`
+- The Calendly booking link: `calendly.com/mlremedial/stretchtherapy`
 - Instagram handle: `@ml.remedial`
 - The 4 Stripe Payment Links on `book.html` — each one opened directly and verified against its actual checkout page (product name + price), not assumed:
   - 2×/week, $180/wk → `buy.stripe.com/9B6dR23Bs1oo3U4chD8Zq04`
