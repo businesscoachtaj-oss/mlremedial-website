@@ -1,6 +1,6 @@
 # M.L Remedial — website
 
-A 5-page static website for May Lareza's massage/movement therapy business. Plain HTML/CSS/JS — no build step, no framework, works on any static host.
+A 5-page static website (redesigned Oct 23 2026) for May Lareza's massage/movement therapy business. Plain HTML/CSS/JS — no build step, no framework, works on any static host.
 
 ## Pages
 - `index.html` — Home
@@ -33,12 +33,17 @@ A 5-page static website for May Lareza's massage/movement therapy business. Plai
   - **Certified Fascial Stretch Practitioner — Level 1**, Stretch to Win Institute (FST), certified 2021
   - **Trigger Point Myofascial Compression Techniques**, Personal Training Academy, certified 2014
 
-**Placeholder — search for `⚠` in the rendered pages, or `PLACEHOLDER` in the HTML, to find every spot to update:**
-- Business hours (contact.html) — not yet provided
-- The Facebook page URL (currently `#` everywhere it appears) — not yet provided
-- Client testimonial quotes (index.html, about.html)
-- The map/studio-photo block on `contact.html` — swap for an embedded Google Map or studio photo
-- The footer credit line ("Site by Totality Digital") — remove or change freely
+**Ambassador (added Oct 23 2026):**
+- May is an ambassador for Totality and Totality Nutrition. The section lives on the Home and About pages (`#ambassador`) with a line in every footer.
+- Referral codes (stored in the Totality Supabase `referral_links` table, owner May Lareza):
+  - Totality: `MAY26` (signup link pre-fills it: `totality-omega.vercel.app/signup?ref=MAY26`)
+  - Totality Nutrition: `MAY26NUTRITION` (typed at `totality-nutrition.vercel.app/signup`)
+- Codes give 20% off the first 2 months and are entered at signup on the web or Android (the field is hidden on iOS).
+- If a code changes in the app, update `ml_build.py` constants or the HTML in both places.
+
+**Still open:**
+- Business hours (not yet provided)
+- The footer credit line ("Site by Totality Digital"), remove or change freely
 
 ## Photos
 
