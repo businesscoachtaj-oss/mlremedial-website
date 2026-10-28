@@ -4,7 +4,7 @@ A 5-page static website (redesigned Oct 23 2026) for May Lareza's massage/moveme
 
 ## Pages
 - `index.html` — Home
-- `services.html` — Services & pricing (Remedial Massage only, four recurring plans)
+- `services.html` — Services & pricing (Remedial Massage with four recurring plans, plus an enquiry-only Online training section, `#online-training`, added Oct 28 2026: no price, no payment link, enquiries go to bodybymay@gmail.com or Instagram)
 - `about.html` — About May
 - `book.html` — Booking (Calendly link + 4 live Stripe payment links, one per plan)
 - `contact.html` — Contact info & socials
