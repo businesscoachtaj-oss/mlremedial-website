@@ -261,6 +261,8 @@ p{ margin: 0 0 1em; }
 .amb-card .amb-dot{ width:12px; height:12px; border-radius:50%; }
 .amb-card .amb-dot.totality{ background:#ED8008; }
 .amb-card .amb-dot.nutrition{ background:#3B8FD0; }
+.amb-card .amb-dot.training{ background:#D92B2B; }
+.amb-grid--3{ grid-template-columns: repeat(3,1fr); }
 .amb-card h3{ font-size: 26px; color:#fff; margin:0; }
 .amb-card p{ color:#CFC4B6; font-size:15px; flex-grow:1; }
 .code-box{
@@ -363,7 +365,7 @@ p{ margin: 0 0 1em; }
   .page-hero .container, .split{ grid-template-columns: 1fr; gap: 40px; }
   .page-hero h1{ font-size: 42px; }
   .section-head h2, .split h2, .amb-head h2{ font-size: 34px; }
-  .grid-3, .grid-2, .certs-grid, .amb-grid, .book-options, .contact-grid{ grid-template-columns: 1fr; }
+  .grid-3, .grid-2, .certs-grid, .amb-grid, .amb-grid--3, .book-options, .contact-grid{ grid-template-columns: 1fr; }
   .amb-head{ grid-template-columns: 1fr; gap: 18px; }
   .steps{ grid-template-columns: repeat(2,1fr); }
   .footer-top{ grid-template-columns: 1fr; gap: 28px; }
